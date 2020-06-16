@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 16 2 * * 3
+    - cron: 33 2 * * 3
 
 jobs:
   build:
@@ -20,10 +20,10 @@ jobs:
       
     - name: Login IBM Cloud
       run: |
-        ibmcloud login -u ${{ secrets.MAIL }} -p ${{ secrets.PWD }} -r ${{ secrets.RGN }}
+        ibmcloud login -u ${{ secrets.IBM_CLOUD_ID }} -p ${{ secrets.IBM_CLOUD_PWD }} -r ${{ secrets.IBM_CLOUD_RGN }}
     - name: Restart
       run: |
         ibmcloud target -g Default
         ibmcloud target --cf
         ibmcloud cf install
-        ibmcloud cf restart ${{ secrets.CFNAME }}
+        ibmcloud cf restart ${{ secrets.IBM_CLOUD_APP }}
