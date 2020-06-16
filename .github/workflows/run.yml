@@ -23,6 +23,8 @@ jobs:
         ibmcloud login -u ${{ secrets.MAIL }} -p ${{ secrets.PWD }} -r ${{ secrets.RGN }}
     - name: Restart
       run: |
+        ibmcloud api
+        ibmcloud target -g default
         ibmcloud target --cf
         ibmcloud cf install
         ibmcloud cf restart ${{ secrets.CFNAME }}
