@@ -1,4 +1,5 @@
 # ibm_cf_restart-actions
+IBM Cloud 10天不操作就会关机，所以我们需要 十天内对其重启一次，避免关机。
 使用Github Actions定时重启IBM Cloud Foundry应用程序
 
 ## 使用之前，有几项准备工作
