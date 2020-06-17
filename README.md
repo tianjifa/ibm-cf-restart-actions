@@ -10,11 +10,9 @@
 
 ### 1 Fork此仓库
 
-### 2 设置此仓库的变量
+### 2 设置此仓库的变量Secrets
 
-![](http://tu.yaohuo.me/imgs/2020/06/750d9a9a867979ce.png)
-
-依次添加名为**MAIL**、**PWD**、**RGN**、**CFNAME**的变量  
+依次添加名为**IBM_CLOUD_ID**、**IBM_CLOUD_PWD**、**IBM_CLOUD_RGN**、**IBM_CLOUD_APP**的变量  
 值分别为邮箱(账号)、密码、区域、Cloud Foundry应用程序的名称  
 
 ### 3 确定Github Action正常工作
@@ -24,11 +22,11 @@
 此前，可能需要点击**Pull requests**与**Projects**之间的**Action**进去点一下允许之类的
 
 ### 变量示例
-MAIL====>12345@qq.com  
-PWD====>123456QWER  
-RGN====>us-south  
-CFNAME====>cxkjntm  
+IBM_CLOUD_ID====>12345@qq.com  
+IBM_CLOUD_PWD====>123456QWER  
+IBM_CLOUD_RGN====>us-south  
+IBM_CLOUD_APP====>APP  
 
 ## 其他
 
-配置完毕，将会在每天的04:15重启Cloud Foundry应用程序
+配置完毕，将会在每周三的03:30重启Cloud Foundry应用程序
