@@ -12,7 +12,8 @@
 
 ### 2 设置此仓库的变量Secrets
 
-依次添加名为**IBM_CLOUD_ID**、**IBM_CLOUD_PWD**、**IBM_CLOUD_RGN**、**IBM_CLOUD_APP**的变量  
+依次添加名为
+**IBM_CLOUD_ID**、**IBM_CLOUD_PWD**、**IBM_CLOUD_RGN**、**IBM_CLOUD_APP**的变量  
 值分别为邮箱(账号)、密码、区域、Cloud Foundry应用程序的名称  
 
 ### 3 确定Github Action正常工作
